@@ -1,0 +1,10 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+-- Masukkan data pengguna contoh
+INSERT INTO users (username, password) VALUES 
+('user1', '$2y$10$3KXlXLAKRwdadh3kf2qQE.o83mY2hgCqRiNkksszmFZ.NqjzPKZmG'),  -- Di sini hash password 'password123'
+('user2', '$2y$10$tAnauscR45n32SnZdjVcX.L1fArEBu0UHk972b01RDg8FmwIcUqr.');  -- Hash dari 'mypassword'
